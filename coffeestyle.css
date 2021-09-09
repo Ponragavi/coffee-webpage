@@ -1,0 +1,81 @@
+.para{
+	padding-top: 100px;
+	text-align: center;
+}
+.paragraph{
+	padding-top: 20px;
+	text-align: center;
+	color: grey;
+}
+.link{
+	padding-top: 20px;
+	text-align: center;
+}
+.text{
+	padding-top: 70px;
+	text-align: center;
+	color: grey;
+}
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+figcaption{
+	line-height: 200%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.subscribe{
+	display: block;
+	align-items: center;
+	background-color: rgb(29, 31, 46);
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	padding-top: 150px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.subscribe h2{
+	color: white;
+}
+.subscribe p{
+	color: grey;
+}
